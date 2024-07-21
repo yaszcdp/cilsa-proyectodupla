@@ -15,9 +15,9 @@
 
     <!-- NAVBAR -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">CILSA — BOOTCAMP FULLSTACK</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+            <div class="container-fluid py-2">
+                <a class="navbar-brand text-white" href="#">CILSA — BOOTCAMP FULLSTACK</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -43,65 +43,72 @@
     </header>
 
     <!-- CARRUSEL -->
-    <div id="carouselCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section class="page-section my-4">
+        <div id="carouselCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/carousel-design.jpg" class="d-block w-100" alt="imagen representativa del diseño web">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Diseño Web Personalizado</h5>
+                        <p>Creación de sitios web únicos y personalizados que reflejan la identidad de tu marca.</p>
+                    </div>
+                    <div class="carousel-caption d-block d-md-none">
+                        <h6>Diseño Web Personalizado</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carousel-responsive.jpg" class="d-block w-100"
+                        alt="imagen representativa del desarrollo responsivo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Desarrollo Responsivo</h5>
+                        <p>Aseguramos que tu sitio web se vea y funcione perfectamente en cualquier dispositivo.</p>
+                    </div>
+                    <div class="carousel-caption d-block d-md-none">
+                        <h6>Desarrollo Responsivo</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carousel-mantenimiento.jpg" class="d-block w-100"
+                        alt="imagen representativa del soporte y mantenimiento">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Soporte y Mantenimiento Web</h5>
+                        <p class="p-1">Ofrecemos soporte continuo y mantenimiento para asegurar que tu sitio web funcione
+                            sin problemas
+                            y esté siempre actualizado.</p>
+                    </div>
+                    <div class="carousel-caption d-block d-md-none">
+                        <h6>Soporte y Mantenimiento Web</h6>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/carousel-design.jpg" class="d-block w-100" alt="imagen representativa del diseño web">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Diseño Web Personalizado</h5>
-                    <p>Creación de sitios web únicos y personalizados que reflejan la identidad de tu marca.</p>
-                </div>
-                <div class="carousel-caption d-block d-md-none">
-                    <h6>Diseño Web Personalizado</h6>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./img/carousel-responsive.jpg" class="d-block w-100"
-                    alt="imagen representativa del desarrollo responsivo">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Desarrollo Responsivo</h5>
-                    <p>Aseguramos que tu sitio web se vea y funcione perfectamente en cualquier dispositivo.</p>
-                </div>
-                <div class="carousel-caption d-block d-md-none">
-                    <h6>Desarrollo Responsivo</h6>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./img/carousel-mantenimiento.jpg" class="d-block w-100"
-                    alt="imagen representativa del soporte y mantenimiento">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Soporte y Mantenimiento Web</h5>
-                    <p class="p-1">Ofrecemos soporte continuo y mantenimiento para asegurar que tu sitio web funcione
-                        sin problemas
-                        y esté siempre actualizado.</p>
-                </div>
-                <div class="carousel-caption d-block d-md-none">
-                    <h6>Soporte y Mantenimiento Web</h6>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    </section>
 
     <!-- TARJETAS NOSOTROS -->
-    <section class="page-section text-center bg-black text-white py-4" id="team">
-        <div class="container">
-            <h2 class="section-heading text-uppercase">Nuestro Team</h2>
-            <div class="row">
-                <div class="col-lg-6">
+    <section class="page-section text-center bg-black text-white my-4" id="team">
+        <div class="container py-4 px-4 px-lg-5">
+            <div class="row gx-4 gx-lg justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mb-2">Nosotros</h2>
+                    <hr class="divider">
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg justify-content-center">
+                <div class="col-lg-6 pt-2">
                     <div class="team-member mx-auto mb-5 mb-lg-0">
                         <img class="img-fluid rounded-circle mb-3" src="./img/team-member1.jpg" alt="...">
                         <h5>Yas'z Escobar Tomé</h5>
@@ -117,9 +124,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="./img/team-member2.jpg" alt="...">
+                <div class="col-lg-6 pt-2">
+                    <div class="team-member mx-auto mb-5 mb-lg-0">
+                        <img class="mx-auto rounded-circle mb-3" src="./img/team-member2.jpg" alt="...">
                         <h5>Demian Parenti</h5>
                         <p class="">Lead Developer</p>
                         
@@ -138,17 +145,18 @@
     </section>
 
     <!-- CONTACTO -->
-    <section class="page-section mt-5" id="contact">
+    <section class="page-section my-4" id="contact">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Contáctanos!</h2>
+                    <h2 class="mt-0">¡Contáctanos!</h2>
                     <hr class="divider">
                     <p class="text-muted mb-5">¿Listo para empezar tu siguiente proyecto con nosotros?
                             <br>¡Envíanos un mensaje y te responderemos tan pronto sea posible!</p>
                 </div>
             </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+
+            <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-6">
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <!-- Nombre input-->
@@ -176,7 +184,9 @@
                             <label for="message">Message</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">Campo obligatorio.</div>
                         </div>
-                        <div class="d-grid"><button class="btn btn-outline-dark btn-xl" id="submitButton" type="submit">Submit</button></div>
+                        <div class="d-grid">
+                            <button class="btn btn-outline-dark btn-xl" id="submitButton" type="submit">Enviar</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -185,20 +195,17 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer bg-black small text-center text-white-50 h-50">
+    <footer class="footer bg-black small text-center text-white-50 h-50 mt-4">
         <div class="container-fluid py-4 px-lg-5">
             Copyright ©  Yas'z Escobar Tomé & Demian Parenti
         </div>
     </footer>
 
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
